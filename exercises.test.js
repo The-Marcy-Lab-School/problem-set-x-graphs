@@ -45,9 +45,7 @@ describe('Graph', () => {
     });
 });
 
-// Remove the .skip to run these tests when you are ready.
-
-describe.skip('breadthFirstSearch', () => {
+describe('breadthFirstSearch', () => {
     it('can determine the path between two verticies using BFS', () => {
         const list = {
             'A': ['B', 'C', 'G'],
@@ -65,7 +63,7 @@ describe.skip('breadthFirstSearch', () => {
     });
 });
 
-describe.skip('depthFirstSearch', () => {
+describe('depthFirstSearch', () => {
     it('can determine the path between two verticies using DFS', () => {
         const list = {
             'A': ['B', 'C', 'G'],
