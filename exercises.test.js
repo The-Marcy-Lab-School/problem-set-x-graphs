@@ -45,6 +45,8 @@ describe('Graph', () => {
     });
 });
 
+// Remove the .skip to run these tests when you are ready.
+
 describe.skip('breadthFirstSearch', () => {
     it('can determine the path between two verticies using BFS', () => {
         const list = {
