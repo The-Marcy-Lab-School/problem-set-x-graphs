@@ -49,10 +49,10 @@ describe.skip('breadthFirstSearch', () => {
     it('can determine the path between two verticies using BFS', () => {
         const list = {
             'A': ['B', 'C', 'G'],
-            'B': ['F', 'G', 'A'],
-            'C': ['H'],
-            'F': ['H', 'I', 'J'],
-            'G': ['A'],
+            'B': ['A', 'F', 'G'],
+            'C': ['A', 'H'],
+            'F': ['B', 'H', 'I', 'J'],
+            'G': ['A', 'B'],
             'H': ['C', 'F'],
             'I': ['F'],
             'J': ['F'],
@@ -67,10 +67,10 @@ describe.skip('depthFirstSearch', () => {
     it('can determine the path between two verticies using DFS', () => {
         const list = {
             'A': ['B', 'C', 'G'],
-            'B': ['F', 'G', 'A'],
-            'C': ['H'],
-            'F': ['H', 'I', 'J'],
-            'G': ['A'],
+            'B': ['A', 'F', 'G'],
+            'C': ['A', 'H'],
+            'F': ['B', 'H', 'I', 'J'],
+            'G': ['A', 'B'],
             'H': ['C', 'F'],
             'I': ['F'],
             'J': ['F'],
