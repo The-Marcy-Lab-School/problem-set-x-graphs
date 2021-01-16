@@ -4,11 +4,11 @@ class Graph {
     }
 }
 
-const breadthFirstSearch = (graph, vertex) => {
+const breadthFirstSearch = (graph, start, end) => {
 
 }
 
-const depthFirstSearch = (graph, vertex) => {
+const depthFirstSearch = (graph, start, end) => {
     
 }
 
