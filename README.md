@@ -21,6 +21,6 @@ Answer the following questions in `exercises.js`. Ensure all tests are passing b
    - `removeEdge`
 
 
-2. **Breadth-First Search:** Implement a `breadthFirstSearch` function that takes in a graph, a start vertex,  and a vertex to search for, and locates the given vertex using a breadth-first search algorith. The function should return the path used to locate the given node. As a reminder, BFS algorithms should search along each level before proceeding further down the graph.
+2. **Breadth-First Search:** Implement a `breadthFirstSearch` function that takes in a graph, a start vertex, and an end vertex to search for, and attempts to locate the given vertex using a breadth-first search algorithm. The function should return `true` if a path exists between the start and end vertices, and should return `false` is no path exists. As a reminder, BFS algorithms should search along each level before proceeding further down the graph.
 
-3. **Depth-First Search:** Implement a `depthFirstSearch` function that takes in a graph, a start vertex, and a vertex to search for, and locates the given vertex using a depth-first search algorith. The function should return the path used to locate the given node. As a reminder, DFS algortihms should search down paths before moving on to child functions. 
+3. **Depth-First Search:** Implement a `depthFirstSearch` function that takes in a graph, a start vertex, and an end vertex to search for, and attempts to locate the given vertex using a depth-first search algorith.  The function should return `true` if a path exists between the start and end vertices, and should return `false` is no path exists. As a reminder, DFS algortihms should search down paths before moving on to other neighbors. 
