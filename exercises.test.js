@@ -46,37 +46,73 @@ describe('Graph', () => {
 });
 
 describe('breadthFirstSearch', () => {
-    it('can determine the path between two verticies using BFS', () => {
+    it('can find a path between two verticies using BFS', () => {
         const list = {
             'A': ['B', 'C'],
             'B': ['A', 'F', 'G'],
             'C': ['A', 'H'],
-            'F': ['B', 'I', 'J'],
+            'D': [],
+            'E': ['F'],
+            'F': ['B', 'E', 'H', 'I'],
             'G': ['B'],
-            'H': ['C'],
+            'H': ['C', 'F'],
             'I': ['F'],
-            'J': ['F'],
         }
         const graph = new Graph(list);
 
-        expect(breadthFirstSearch(graph, 'A', 'J')).toEqual(['A', 'B', 'F', 'J']);
+        expect(breadthFirstSearch(graph, 'A', 'I')).toEqual(true);
+    });
+    
+    it('returns false if no path exists using BFS', () => {
+        const list = {
+            'A': ['B', 'C'],
+            'B': ['A', 'F', 'G'],
+            'C': ['A', 'H'],
+            'D': [],
+            'E': ['F'],
+            'F': ['B', 'E', 'H', 'I'],
+            'G': ['B'],
+            'H': ['C', 'F'],
+            'I': ['F'],
+        }
+        const graph = new Graph(list);
+
+        expect(breadthFirstSearch(graph, 'A', 'D')).toEqual(false);
     });
 });
 
 describe('depthFirstSearch', () => {
-    it('can determine the path between two verticies using DFS', () => {
+    it('can find a path between two verticies using DFS', () => {
         const list = {
             'A': ['B', 'C'],
             'B': ['A', 'F', 'G'],
             'C': ['A', 'H'],
-            'F': ['B', 'I', 'J'],
+            'D': [],
+            'E': ['F'],
+            'F': ['B', 'E', 'H', 'I'],
             'G': ['B'],
-            'H': ['C'],
+            'H': ['C', 'F'],
             'I': ['F'],
-            'J': ['F'],
         }
         const graph = new Graph(list);
 
-        expect(depthFirstSearch(graph, 'A', 'J')).toEqual(['A', 'B', 'F', 'J']);
+        expect(depthFirstSearch(graph, 'A', 'I')).toEqual(true);
+    });
+    
+    it('returns false if no path exists using DFS', () => {
+        const list = {
+            'A': ['B', 'C'],
+            'B': ['A', 'F', 'G'],
+            'C': ['A', 'H'],
+            'D': [],
+            'E': ['F'],
+            'F': ['B', 'E', 'H', 'I'],
+            'G': ['B'],
+            'H': ['C', 'F'],
+            'I': ['F'],
+        }
+        const graph = new Graph(list);
+
+        expect(depthFirstSearch(graph, 'A', 'D')).toEqual(false);
     });
 });
