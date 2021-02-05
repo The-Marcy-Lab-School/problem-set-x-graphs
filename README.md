@@ -1,7 +1,11 @@
-# Problem Set 11.6 - Graphs
+# Problem Set: Graphs
 
 ## Directions
 Respond to short response questions in clear, concise sentences directly within this file. Use markdown to ensure that your answers are formatted correctly.
+
+Complete code challenges in `exercises.js`. 
+
+Use Test Driven Development to guide you. Run `npm install` to download dependencies. Run `npm test` to run tests locally. Ensure all tests are passing before submitting this problem set.
 
 ### Short Response Questions
 **1. What are the properties of a graph?**
@@ -12,7 +16,6 @@ Respond to short response questions in clear, concise sentences directly within 
 
 
 ### Coding Exercises
-Answer the following questions in `exercises.js`. Ensure all tests are passing before submitting this problem set.
 
 1. **Implement a Graph Class:** Implement a graph class. Your class should respond to the following methods:
    - `addVertex`
