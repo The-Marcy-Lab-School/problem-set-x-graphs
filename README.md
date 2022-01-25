@@ -18,6 +18,7 @@ Use Test Driven Development to guide you. Run `npm install` to download dependen
 ### Coding Exercises
 
 1. **Implement a Graph Class:** Implement a graph class. Your class should respond to the following methods:
+   - `getVertex`
    - `addVertex`
    - `removeVertex`
    - `addEdge`
